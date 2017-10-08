@@ -8,20 +8,18 @@ import javax.swing.*;
 */
 
 public class ChessProject extends JFrame implements MouseListener, MouseMotionListener {
-    JLayeredPane layeredPane;
-    JPanel chessBoard;
-    JLabel chessPiece;
-    int xAdjustment;
-    int yAdjustment;
-    int startX;
-    int startY;
-    private int initialX;
-    int initialY;
-    JPanel panels;
-    JLabel pieces;
+    private JLayeredPane layeredPane;
+    private JPanel chessBoard;
+    private JLabel chessPiece;
+    private int xAdjustment;
+    private int yAdjustment;
+    private int startX;
+    private int startY;
+    private JPanel panels;
+    private JLabel pieces;
 
 
-    public ChessProject() {
+    private  ChessProject() {
         Dimension boardSize = new Dimension(600, 600);
 
         //  Use a Layered Pane for this application
@@ -243,8 +241,6 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
         xAdjustment = parentLocation.x - e.getX();
         yAdjustment = parentLocation.y - e.getY();
         chessPiece = (JLabel) c;
-        initialX = e.getX();
-        initialY = e.getY();
         startX = (e.getX() / 75);
         startY = (e.getY() / 75);
         chessPiece.setLocation(e.getX() + xAdjustment, e.getY() + yAdjustment);
