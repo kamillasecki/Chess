@@ -17,6 +17,11 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
     private int startY;
     private JPanel panels;
     private JLabel pieces;
+    private int whiteKingX = 3;
+    private int whiteKingY = 8;
+    private int blackKingX = 3;
+    private int blackKingY = 0;
+    boolean end = false;
 
 
     private  ChessProject() {
@@ -133,12 +138,16 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
     }
 
     private Boolean checkOpponent(int newX, int newY, String moving) {
-        Boolean oponent;
+        Boolean opponent;
         Component c1 = chessBoard.findComponentAt(newX * 75, newY * 75);
         JLabel awaitingPiece = (JLabel) c1;
         String tmp1 = awaitingPiece.getIcon().toString();
-        oponent = !(tmp1.contains(moving));
-        return oponent;
+        opponent = !(tmp1.contains(moving));
+        if(opponent && tmp1.contains("King")) {
+            JOptionPane.showMessageDialog(null, moving + " won!!");
+            end = true;
+        }
+        return opponent;
     }
 
     private Boolean checkField(int x, int y, String moving) {
@@ -298,7 +307,32 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
                 validMove = false;
             }
         }
+/*
+        ==================================================
+        ====== KING ======================================
+        ==================================================
+        */
 
+        if (pieceName.contains("King")) {
+            if ((Math.abs(movementX) == 0 || Math.abs(movementX) == 1) && (Math.abs(movementY) == 0 || Math.abs(movementY) == 1)){
+                if (piecePresent(landingX, landingY)) {
+                    validMove = checkOpponent(landingX, landingY, movingColour);
+                } else {
+                    validMove = true;
+                }
+            } else {
+                validMove = false;
+            }
+            if (validMove) {
+                if (movingColour == "Black") {
+                    blackKingX = landingX;
+                    blackKingY = landingY;
+                } else {
+                    whiteKingX = landingX;
+                    whiteKingY = landingY;
+                }
+            }
+        }
 
         /*
         ==================================================
