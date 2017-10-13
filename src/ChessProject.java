@@ -319,6 +319,7 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
                 }
             }
 
+
         /*
         ==================================================
         ====== KING ======================================
