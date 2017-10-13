@@ -18,9 +18,9 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
     private JPanel panels;
     private JLabel pieces;
     private int whiteKingX = 3;
-    private int whiteKingY = 8;
+    private int whiteKingY = 0;
     private int blackKingX = 3;
-    private int blackKingY = 0;
+    private int blackKingY = 7;
     boolean end = false;
 
 
@@ -314,17 +314,17 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
         */
 
         if (pieceName.contains("King")) {
-            if ((Math.abs(movementX) == 0 || Math.abs(movementX) == 1) && (Math.abs(movementY) == 0 || Math.abs(movementY) == 1)){
-                if (piecePresent(landingX, landingY)) {
-                    validMove = checkOpponent(landingX, landingY, movingColour);
-                } else {
-                    validMove = true;
-                }
+            if (movingColour.equals("Black")) {
+                validMove = Math.abs(whiteKingX - landingX) > 1 || Math.abs(whiteKingY - landingY) > 1;
             } else {
-                validMove = false;
+                validMove = Math.abs(blackKingX - landingX) > 1 || Math.abs(blackKingY - landingY) > 1;
             }
             if (validMove) {
-                if (movingColour == "Black") {
+                validMove = (Math.abs(movementX) == 0 || Math.abs(movementX) == 1) && (Math.abs(movementY) == 0 || Math.abs(movementY) == 1) && (!piecePresent(landingX, landingY) || checkOpponent(landingX, landingY, movingColour));
+            }
+
+            if (validMove) {
+                if (movingColour.equals("Black")) {
                     blackKingX = landingX;
                     blackKingY = landingY;
                 } else {
