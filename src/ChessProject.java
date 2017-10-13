@@ -26,7 +26,7 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
     private String turn = "White";
 
 
-    private  ChessProject() {
+    private ChessProject() {
         Dimension boardSize = new Dimension(600, 600);
 
         //  Use a Layered Pane for this application
@@ -145,7 +145,7 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
         JLabel awaitingPiece = (JLabel) c1;
         String tmp1 = awaitingPiece.getIcon().toString();
         opponent = !(tmp1.contains(moving));
-        if(opponent && tmp1.contains("King")) {
+        if (opponent && tmp1.contains("King")) {
             JOptionPane.showMessageDialog(null, moving + " won!!");
             end = true;
         }
@@ -318,7 +318,8 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
                     validMove = false;
                 }
             }
-/*
+
+        /*
         ==================================================
         ====== KING ======================================
         ==================================================
