@@ -333,7 +333,9 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
                     validMove = Math.abs(blackKingX - landingX) > 1 || Math.abs(blackKingY - landingY) > 1;
                 }
                 if (validMove) {
-                    validMove = (Math.abs(movementX) == 0 || Math.abs(movementX) == 1) && (Math.abs(movementY) == 0 || Math.abs(movementY) == 1) && (!piecePresent(landingX, landingY) || checkOpponent(landingX, landingY, movingColour));
+                    validMove = (Math.abs(movementX) <= 1  && Math.abs(movementY) <= 1) &&
+                            !(Math.abs(movementX) == 0 && Math.abs(movementY) == 0 )  &&
+                            (!piecePresent(landingX, landingY) || checkOpponent(landingX, landingY, movingColour));
                 }
 
                 if (validMove) {
@@ -464,7 +466,7 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
         System.out.println("Moved piece: " + pieceName);
         System.out.println("Starting position: ( " + startX + ", " + startY + " )");
         System.out.println("Move offset: ( " + movementX + ", " + movementY + " )");
-        System.out.println("Landing coordinates are: ( " + e.getX() + ", " + e.getY() + " )");
+        System.out.println("Landing coordinates are: ( " + landingX + ", " + landingY + " )");
         System.out.println("Move was: " + (validMove ? "VALID" : "INVALID"));
         System.out.println("-----------------------------------------------");
 
