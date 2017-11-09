@@ -24,13 +24,13 @@ public class AIAgent{
         return selectedMove;
     }
 
-    public Move nextBestMove(Stack possibilities){
-        Move selectedMove = new Move();
-        return selectedMove;
-    }
-
-    public Move twoLevelsDeep(Stack possibilities){
-        Move selectedMove = new Move();
-        return selectedMove;
-    }
+//    public Move nextBestMove(Stack possibilities){
+//        Move selectedMove = new Move();
+//        return selectedMove;
+//    }
+//
+//    public Move twoLevelsDeep(Stack possibilities){
+//        Move selectedMove = new Move();
+//        return selectedMove;
+//    }
 }

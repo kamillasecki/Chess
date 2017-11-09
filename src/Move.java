@@ -3,12 +3,22 @@ class Move{
     int startY;
     int landingX;
     int landingY;
+    String name;
 
-    public Move(int startX, int startY, int landingX, int landingY) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Move(int startX, int startY, int landingX, int landingY, String name) {
         this.startX = startX;
         this.startY = startY;
         this.landingX = landingX;
         this.landingY = landingY;
+        this.name = name;
     }
 
     public int getStartX() {
