@@ -38,7 +38,7 @@
 //        layeredPane.addMouseListener(this);
 //        layeredPane.addMouseMotionListener(this);
 //
-//        //Add a chess board to the Layered Pane
+//        //Add a chess Board to the Layered Pane
 //        chessBoard = new JPanel();
 //        layeredPane.add(chessBoard, JLayeredPane.DEFAULT_LAYER);
 //        chessBoard.setLayout(new GridLayout(8, 8));
@@ -56,7 +56,7 @@
 //                square.setBackground(i % 2 == 0 ? Color.gray : Color.white);
 //        }
 //
-//        // Setting up the Initial Chess board.
+//        // Setting up the Initial Chess Board.
 //        for (int i = 8; i < 16; i++) {
 //            pieces = new JLabel(new ImageIcon("WhitePawn.png"));
 //            panels = (JPanel) chessBoard.getComponent(i);
@@ -293,7 +293,7 @@
 //        }
 //        if (Objects.equals(movingColour, turn)) {
 //
-////check if mouse released within the board boundaries and if not restore the chess piece
+////check if mouse released within the Board boundaries and if not restore the chess piece
 //            if ((e.getX() < 0) || (e.getY() < 0) || (e.getX() > 8 * 75) || (e.getY() > 8 * 75)) {
 //                int location;
 //                if (startY == 0) {

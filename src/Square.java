@@ -1,18 +1,21 @@
 class Square{
     public int xCoor;
     public int yCoor;
-    public String pieceName;
+    public Piece piece;
+    public boolean occupied;
 
-    public Square(int x, int y, String name){
+    public Square(int x, int y, Piece piece){
         xCoor = x;
         yCoor = y;
-        pieceName = name;
+        this.piece = piece;
+        occupied = true;
     }
 
     public Square(int x, int y){
         xCoor = x;
         yCoor = y;
-        pieceName = "";
+        piece = null;
+        occupied = false;
     }
 
     public int getXC(){
@@ -23,7 +26,16 @@ class Square{
         return yCoor;
     }
 
-    public String getName(){
-        return pieceName;
+    public boolean isOccupied () {
+        return occupied;
     }
+
+    public void changeOccupied() {
+        this.occupied = !this.occupied;
+    }
+
+    public Piece getPiece(){
+        return piece;
+    }
+
 }

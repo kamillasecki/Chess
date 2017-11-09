@@ -1,21 +1,45 @@
 class Move{
-    Square start;
-    Square landing;
+    int startX;
+    int startY;
+    int landingX;
+    int landingY;
 
-    public Move(Square x, Square y){
-        start = x;
-        landing = y;
+    public Move(int startX, int startY, int landingX, int landingY) {
+        this.startX = startX;
+        this.startY = startY;
+        this.landingX = landingX;
+        this.landingY = landingY;
     }
 
-    public Move(){
-
+    public int getStartX() {
+        return startX;
     }
 
-    public Square getStart(){
-        return start;
+    public void setStartX(int startX) {
+        this.startX = startX;
     }
 
-    public Square getLanding(){
-        return landing;
+    public int getStartY() {
+        return startY;
+    }
+
+    public void setStartY(int startY) {
+        this.startY = startY;
+    }
+
+    public int getLandingX() {
+        return landingX;
+    }
+
+    public void setLandingX(int landingX) {
+        this.landingX = landingX;
+    }
+
+    public int getLandingY() {
+        return landingY;
+    }
+
+    public void setLandingY(int landingY) {
+        this.landingY = landingY;
     }
 }
