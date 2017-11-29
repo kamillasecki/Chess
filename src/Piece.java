@@ -23,10 +23,6 @@ class Piece {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     Piece(String type, String colour) {
         this.colour = colour;
         this.type = type;
@@ -41,15 +37,20 @@ class Piece {
                 value = 3;
                 break;
             case "King":
-                value = 9;
+                value = 200;
                 break;
             case "Queen":
-                value = 8;
+                value = 9;
                 break;
             case "Knight":
                 value = 3;
                 break;
         }
+    }
+
+    public Piece copy(){
+        Piece newPiece = new Piece(this.getType(), this.getColour());
+        return newPiece;
     }
 
 
