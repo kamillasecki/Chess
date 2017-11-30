@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a00a2a-f7df-4caf-9741-4ba968846c87" name="Default" comment="big update for AI start">
+    <list default="true" id="58a00a2a-f7df-4caf-9741-4ba968846c87" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Chess/ChessProject.class" afterPath="$PROJECT_DIR$/out/production/Chess/ChessProject.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AIAgent.java" afterPath="$PROJECT_DIR$/src/AIAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.java" afterPath="$PROJECT_DIR$/src/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChessProject.java" afterPath="$PROJECT_DIR$/src/ChessProject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Move.java" afterPath="$PROJECT_DIR$/src/Move.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Piece.java" afterPath="$PROJECT_DIR$/src/Piece.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Square.java" afterPath="$PROJECT_DIR$/src/Square.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -46,21 +42,21 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="AIAgent.java" pinned="false" current-in-tab="true">
+            <file leaf-file-name="AIAgent.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/AIAgent.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="297">
-                    <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+                  <state relative-caret-position="401">
+                    <caret line="88" column="46" lean-forward="false" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="ChessProject.java" pinned="false" current-in-tab="false">
+            <file leaf-file-name="ChessProject.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/ChessProject.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="315">
-                    <caret line="230" column="9" lean-forward="true" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+                  <state relative-caret-position="502">
+                    <caret line="232" column="72" lean-forward="true" selection-start-line="232" selection-start-column="72" selection-end-line="232" selection-end-column="72" />
                     <folding />
                   </state>
                 </provider>
@@ -73,10 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Piece.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Piece.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Piece.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="288">
               <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#120#121#0" expanded="true" />
@@ -88,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Square.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="478" column="0" lean-forward="false" selection-start-line="478" selection-start-column="0" selection-end-line="478" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="59" column="70" lean-forward="false" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="70" />
               <folding>
                 <element signature="e#491#492#0" expanded="true" />
                 <element signature="e#515#516#0" expanded="true" />
@@ -154,6 +150,7 @@
       <find>copy</find>
       <find>nextBestMove</find>
       <find>getBoardScore</find>
+      <find>bish</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,11 +186,11 @@
         <option value="$PROJECT_DIR$/src/movementLogic.java" />
         <option value="$PROJECT_DIR$/src/_old.java" />
         <option value="$PROJECT_DIR$/src/board.java" />
-        <option value="$PROJECT_DIR$/src/ChessProject.java" />
         <option value="$PROJECT_DIR$/src/Square.java" />
         <option value="$PROJECT_DIR$/src/Move.java" />
         <option value="$PROJECT_DIR$/src/Piece.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
+        <option value="$PROJECT_DIR$/src/ChessProject.java" />
         <option value="$PROJECT_DIR$/src/AIAgent.java" />
       </list>
     </option>
@@ -430,7 +427,7 @@
       <workItem from="1510406644709" duration="31462000" />
       <workItem from="1510585835633" duration="3947000" />
       <workItem from="1511900102855" duration="1324000" />
-      <workItem from="1511983702023" duration="6033000" />
+      <workItem from="1511983702023" duration="16189000" />
     </task>
     <task id="LOCAL-00003" summary="fff">
       <created>1507932258494</created>
@@ -460,11 +457,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510181364283</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Next best move done">
+      <created>1511995064154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1511995064154</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135187000" />
+    <option name="totallyTimeSpent" value="145343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -477,7 +481,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48674443" sideWeight="0.2734375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7658863" sideWeight="0.33958334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3154961" sideWeight="0.33958334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49166667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.48333332" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -575,11 +579,20 @@
     <MESSAGE value="fff" />
     <MESSAGE value="small king corrections" />
     <MESSAGE value="big update for AI start" />
-    <option name="LAST_COMMIT_MESSAGE" value="big update for AI start" />
+    <MESSAGE value="Next best move done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next best move done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="180" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AIAgent.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="191" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -717,34 +730,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="478" column="0" lean-forward="false" selection-start-line="478" selection-start-column="0" selection-end-line="478" selection-end-column="0" />
-          <folding>
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="288">
           <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#120#121#0" expanded="true" />
@@ -755,10 +743,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChessProject.java">
+    <entry file="file://$PROJECT_DIR$/src/AIAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="230" column="9" lean-forward="true" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+        <state relative-caret-position="401">
+          <caret line="88" column="46" lean-forward="false" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -777,11 +773,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AIAgent.java">
+    <entry file="file://$PROJECT_DIR$/src/ChessProject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+        <state relative-caret-position="502">
+          <caret line="232" column="72" lean-forward="true" selection-start-line="232" selection-start-column="72" selection-end-line="232" selection-end-column="72" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="59" column="70" lean-forward="false" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="70" />
+          <folding>
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -233,7 +233,7 @@ public class ChessProject extends JFrame implements MouseListener, MouseMotionLi
         Border redBorder = BorderFactory.createLineBorder(Color.RED, 3);
 
         // ========== SELECT THE AI MOVE ==============
-        Move selectedMove = agent.nextBestMove(testing, board);
+        Move selectedMove = agent.twoLevelsDeep(testing, board);
         int startXpix = (selectedMove.getStartX() * 75) + 20;
         int startYpix = (selectedMove.getStartY() * 75) + 20;
         int landingXpix = (selectedMove.getLandingX() * 75) + 20;
