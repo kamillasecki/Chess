@@ -33,7 +33,7 @@ class Piece {
             case "Rook":
                 value = 5;
                 break;
-            case "Bishup":
+            case "Bishop":
                 value = 3;
                 break;
             case "King":
